@@ -6,4 +6,10 @@
     <RootNamespace>Xadrez_Console</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Update="tabuleiro\Tabuleiro.cs">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
 </Project>

@@ -30,11 +30,11 @@ namespace xadrez {
                     mat[pos.linha, pos.coluna] = true;
                 }
                 pos.definirValores(posicao.linha - 1, posicao.coluna - 1);
-                if (tab.posicaoValida(pos) && livre(pos) && existeInimigo(pos)) {
+                if (tab.posicaoValida(pos) && existeInimigo(pos)) {
                     mat[pos.linha, pos.coluna] = true;
                 }
-                pos.definirValores(posicao.linha - 1, posicao.coluna +1);
-                if (tab.posicaoValida(pos) && livre(pos) && existeInimigo(pos)) {
+                pos.definirValores(posicao.linha - 1, posicao.coluna + 1);
+                if (tab.posicaoValida(pos) && existeInimigo(pos)) {
                     mat[pos.linha, pos.coluna] = true;
                 }
             }
@@ -48,11 +48,11 @@ namespace xadrez {
                     mat[pos.linha, pos.coluna] = true;
                 }
                 pos.definirValores(posicao.linha + 1, posicao.coluna - 1);
-                if (tab.posicaoValida(pos) && livre(pos) && existeInimigo(pos)) {
+                if (tab.posicaoValida(pos) && existeInimigo(pos)) {
                     mat[pos.linha, pos.coluna] = true;
                 }
                 pos.definirValores(posicao.linha + 1, posicao.coluna + 1);
-                if (tab.posicaoValida(pos) && livre(pos) && existeInimigo(pos)) {
+                if (tab.posicaoValida(pos) && existeInimigo(pos)) {
                     mat[pos.linha, pos.coluna] = true;
                 }
 
